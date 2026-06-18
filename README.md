@@ -14,6 +14,20 @@ The LLM and embedding providers are pluggable: it runs on **Google Gemini** out 
 - **CLI** for bulk ingestion.
 - **Centralized, validated configuration** via Pydantic Settings.
 
+## Architecture
+
+```mermaid
+flowchart LR
+    A["Documents<br/>.txt .md .pdf"] -->|load + chunk| B[Text Splitter]
+    B -->|embed| C[("ChromaDB<br/>Vector Store")]
+    Q["User question"] -->|embed + similarity search| C
+    C -->|relevant chunks| P["Prompt + Context"]
+    P --> L["LLM<br/>(Gemini)"]
+    L --> R["Answer + Sources"]
+```
+
+**Indexing path:** documents are loaded, split into overlapping chunks, embedded, and stored in ChromaDB.
+**Query path:** the question is embedded, the most relevant chunks are retrieved, injected into the prompt as context, and the LLM produces an answer constrained to that context.
 
 ## Tech stack
 
