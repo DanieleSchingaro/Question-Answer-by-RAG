@@ -45,7 +45,7 @@ flowchart LR
 question-answer-by-rag/
 ├── app/
 │   ├── config.py            # Centralized settings (env-driven)
-│   ├── schemas.py           # Pydantic request/response models
+│   ├── schema.py           # Pydantic request/response models
 │   ├── main.py              # FastAPI app and endpoints
 │   └── rag/
 │       ├── providers.py     # LLM + embedding factories (pluggable)
