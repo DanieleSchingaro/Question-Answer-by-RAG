@@ -1,4 +1,4 @@
-#app/rag/providers.py
+#backend/app/rag/providers.py
 """
 Factory per i modelli LLM e di embedding.
 

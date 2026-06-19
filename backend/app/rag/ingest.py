@@ -1,4 +1,4 @@
-#app/rag/ingest.py
+#/backend/app/rag/ingest.py
 """
 Pipeline di ingestion: load -> chunk -> embed -> store
 Carica documenti da un singolo file o da un'intera cartella,

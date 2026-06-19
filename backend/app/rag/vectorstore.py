@@ -1,4 +1,4 @@
-#app/rag/vectorstore.py
+#backend/app/rag/vectorstore.py
 """
 Vector store ChromaDB persistente.
 Collega il modello di embeddings a un database Chroma su disco. Un'unica funzione restituisce l'istanza pronta all'uso,

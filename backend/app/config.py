@@ -1,4 +1,4 @@
-#app/config.py
+#backend/app/config.py
 """
 Configurazione dell'applicazione.
 Tutte le impostazioni vengono lette dalle variabili d'ambiente (o da un file

@@ -1,4 +1,4 @@
-#app/rag/chain.py
+#backend/app/rag/chain.py
 """
 Catena RAG costruita in LCEL (LangChain Expression Language)
 Flusso:

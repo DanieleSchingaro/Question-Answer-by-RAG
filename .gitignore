@@ -1,15 +1,31 @@
+#Python
 __pycache__/
 *.py[cod]
 *.egg-info/
-.eggs/
-build/
-dist/
+
+#Virtual environments
 .venv/
 venv/
 env/
+
+#Environment variables/secrets
 .env
+backend/.env
+
+#Vector store data
+backend/data/chroma/
 data/chroma/
+
+#Node/Next.js
+node_modules/
+.next/
+out/
+frontend/.env*.local
+
+#IDE/OS
 .vscode/
 .idea/
 .DS_Store
+
+#Logs
 *.log

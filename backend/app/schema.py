@@ -1,4 +1,4 @@
-#app/schema.py
+#backend/app/schema.py
 """
 Modelli Pydantic per richieste e risposte dall'API
 """

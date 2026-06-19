@@ -1,4 +1,4 @@
-#scripts/ingest.py
+#backend/scripts/ingest.py
 """
 CLI per indicizzare documenti nel vector store.
 Uso: pytho scripts/ingest.py <percorso>

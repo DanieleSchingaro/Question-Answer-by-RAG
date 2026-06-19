@@ -1,4 +1,4 @@
-#app/main.py
+#backend/app/main.py
 """
 FastAPI: espone la pipeline RAG mediante HTTP.
 Endpoint:
